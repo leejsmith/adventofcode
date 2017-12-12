@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins|Source+Code+Pro:400,900');
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.2em;
+	height: 100%;
+}
+body::after {
+  content: "";
+  background: url('/back.jpg');
+  background-size: cover;
+  background-position: fixed;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;   
+}
+body * {
+	word-wrap: break-word;
+}
+li {
+	line-height: 1.4em;
+	padding: 5px 0;
+}
+h1 a {
+	color: #333;
+	text-decoration: none;
+}
+a {
+	color: #333;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.input {
+	font-family: 'Source Code Pro', monospace;
+	height: 300px;
+	overflow-y: scroll;
+}
+.input span {
+	display: block;
+	font-weight: 900;
+}
+.output {
+	font-family: 'Source Code Pro', monospace;
+}
+.output span {
+	display: block;
+	font-weight: 900;
+}
+
+.puzzle__text, .solution {
+	font-size: 0.8em;
+	margin: 10px;
+	padding: 10px;
+	color: #4256f4;
+	border: 2px solid #333;
+}
+code {
+	font-family: 'Source Code Pro', monospace;
+	background: #333;
+	color: #fff;
+	padding: 0 3px;
+	display: inline-block;
+}
